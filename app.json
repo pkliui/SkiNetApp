@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "SkiNetApp",
+    "slug": "skinetapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.skinetapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Take photos of skin lesions for segmentation",
+        "NSPhotoLibraryUsageDescription": "Select skin lesion images for segmentation",
+        "NSPhotoLibraryAddUsageDescription": "Save segmentation results to your photo library"
+      }
+    },
+    "android": {
+      "package": "com.yourname.skinetapp"
+    },
+    "plugins": [
+      "expo-image-picker",
+      ["expo-media-library", { "photosPermission": "Allow SkiNetApp to save segmentation results." }]
+    ]
+  }
+}
