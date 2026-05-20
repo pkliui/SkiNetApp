@@ -6,7 +6,8 @@
     "start": "expo start",
     "ios": "expo run:ios",
     "android": "expo run:android",
-    "prebuild": "expo prebuild --clean"
+    "prebuild": "expo prebuild --clean",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@react-native-community/slider": "5.1.2",
@@ -14,6 +15,7 @@
     "base64-js": "^1.5.1",
     "expo": "^55.0.25",
     "expo-asset": "~55.0.17",
+    "expo-dev-client": "~55.0.35",
     "expo-file-system": "~55.0.21",
     "expo-image-picker": "~55.0.20",
     "expo-media-library": "~55.0.17",
@@ -25,6 +27,8 @@
   "devDependencies": {
     "@babel/core": "^7.24.0",
     "@types/react": "^19.1.1",
+    "babel-preset-expo": "^55.0.22",
+    "patch-package": "^8.0.1",
     "typescript": "~5.3.3"
   }
 }
